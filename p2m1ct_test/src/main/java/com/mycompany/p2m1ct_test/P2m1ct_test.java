@@ -7,9 +7,16 @@ package com.mycompany.p2m1ct_test;
 /**
  *
  * @author kaleyschlimgen
+ * 
+ * The P2m1ct_test class is the program's main class. 
+ * It tests that the Employee and Manager classes perform as desired.
+ * 
+ * It also is a central location for assigning specific values to the
+ * other classes' fields.
+ * 
  */
+
 public class P2m1ct_test {
-//checking that it updated test branch
     public static void main(String[] args) {
         Employee employeeItem = new Employee();
         Manager managerItem = new Manager();
@@ -29,11 +36,12 @@ public class P2m1ct_test {
         managerItem.setFirstName("Sue");
         managerItem.setLastName("Sanderson");
         managerItem.setSalary(70000);
-        managerItem.setEmployeeID(001);
+        managerItem.setEmployeeID(111);
         managerItem.setDepartment("Sales");
         managerItem.employeeSummary();
    
     }
+    
 }
 
 

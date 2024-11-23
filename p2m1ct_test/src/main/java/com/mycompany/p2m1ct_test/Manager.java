@@ -7,8 +7,24 @@ package com.mycompany.p2m1ct_test;
 /**
  *
  * @author kaleyschlimgen
+ * 
+ * The Manager class is the subclass of the Employee superclass.
+ * 
+ * This class only adds a setter and getter method for the 
+ * added field: managerDepartment.
+ * 
+ * The manager class also has an employeeSummary() method, 
+ * which prints the lines 
+ * from the Employee class' employeeSummary method 
+ * via the line super.employeeSummary, 
+ * and it adds the managerDepartment information 
+ * to the output as well.
+ * The @Override above the employeeSummary method enables
+ * the Manger to print the information from the Employee method
+ * without having to re-write all of that code.
+ * 
  */
-//checking that it updated manager branch
+
 public class Manager extends Employee {
     private String managerDepartment;
     
@@ -20,8 +36,8 @@ public class Manager extends Employee {
         return managerDepartment;
     }
     
-    //employeeSummary method that prints all superclass 
-    //and subclass attributes
+    /*employeeSummary method that prints 
+    all superclass and subclass attributes*/
     @Override
     public void employeeSummary() {
 
@@ -29,8 +45,6 @@ public class Manager extends Employee {
         System.out.println("Department: " + managerDepartment);
         
     }
-    
-
     
 }
 

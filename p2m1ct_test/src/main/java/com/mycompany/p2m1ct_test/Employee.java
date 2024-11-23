@@ -7,8 +7,15 @@ package com.mycompany.p2m1ct_test;
 /**
  *
  * @author kaleyschlimgen
+ * 
+ * The Employee class is the superclass. 
+ * This class contains setters and getters for the fields associated
+ * with the employees' information. 
+ * 
+ * The employeeSummary method prints the name, salary, and ID of the employees.
+ * 
  */
-//checking that it updated employee branch
+
 public class Employee {
     //fields
     String firstName;
@@ -21,7 +28,7 @@ public class Employee {
         salary = 0;
     }
     
-    //setter methods fro firstName, lastName, and employeeID
+    //setter methods for firstName, lastName, and employeeID
     public void setFirstName(String newFirstName) {
         firstName = newFirstName;
     }
@@ -33,13 +40,10 @@ public class Employee {
     public void setEmployeeID(int newEmployeeID) {
         employeeID = newEmployeeID;
     }
-
-//FIXME    
-    //??setter method for salary
+  
+    //setter method for salary
     public double setSalary(double newSalary) {
-        //salaryAmount = 0;
         salary = newSalary;
-//FIXME format 2 decimal places
         return salary;
     }
     
@@ -56,9 +60,9 @@ public class Employee {
     }
 
     public void employeeSummary() {
-        //System.out.println("EMPLOYEE INFORMATION");
         System.out.println("Name: " + firstName + " " + lastName);
-        System.out.println("Salary: $" + salary);
+        System.out.print("Salary: $");
+        System.out.printf("%.2f\n", salary);
         System.out.println("ID: " + employeeID);
     }
      
