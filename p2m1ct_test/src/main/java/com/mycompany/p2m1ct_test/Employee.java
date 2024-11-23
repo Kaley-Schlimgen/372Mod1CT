@@ -8,8 +8,9 @@ package com.mycompany.p2m1ct_test;
  *
  * @author kaleyschlimgen
  */
+//checking that it updated employee branch
 public class Employee {
-    //fields (do i need this?)
+    //fields
     String firstName;
     String lastName;
     int employeeID;
@@ -32,7 +33,8 @@ public class Employee {
     public void setEmployeeID(int newEmployeeID) {
         employeeID = newEmployeeID;
     }
-    
+
+//FIXME    
     //??setter method for salary
     public double setSalary(double newSalary) {
         //salaryAmount = 0;
@@ -52,9 +54,6 @@ public class Employee {
     public int getEmployeeID() {
         return employeeID;
     }
-    //public double getSalary() {
-    //    return salaryAmount;
-    //}
 
     public void employeeSummary() {
         //System.out.println("EMPLOYEE INFORMATION");
@@ -62,13 +61,5 @@ public class Employee {
         System.out.println("Salary: $" + salary);
         System.out.println("ID: " + employeeID);
     }
-    
-    //protected String firstName;
-    //protected String lastName;
-    //protected int employeeID;
-    //protected double salary;
-
-    
-
-    
+     
 }

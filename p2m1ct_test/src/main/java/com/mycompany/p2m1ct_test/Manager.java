@@ -8,6 +8,7 @@ package com.mycompany.p2m1ct_test;
  *
  * @author kaleyschlimgen
  */
+//checking that it updated manager branch
 public class Manager extends Employee {
     private String managerDepartment;
     
@@ -19,7 +20,7 @@ public class Manager extends Employee {
         return managerDepartment;
     }
     
-    //employeeSummary method taht prints all superclass 
+    //employeeSummary method that prints all superclass 
     //and subclass attributes
     @Override
     public void employeeSummary() {
